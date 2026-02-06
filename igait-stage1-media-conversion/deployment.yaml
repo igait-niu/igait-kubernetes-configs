@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: igait-stage1-media-conversion
+  namespace: igait
+  labels:
+    app: igait-stage1-media-conversion
+spec:
+  revisionHistoryLimit: 1
+  replicas: 1
+  selector:
+    matchLabels:
+      app: igait-stage1-media-conversion
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: igait-stage1-media-conversion
+    spec:
+      containers:
+      - image: ghcr.io/igait-niu/igait-stage1-media-conversion:sha-9d4fe67
+        name: igait-stage1-media-conversion
+        resources:
+          limits:
+            cpu: 500m
+            memory: 512Mi
+            ephemeral-storage: 32Mi
+          requests:
+            cpu: 100m
+            memory: 128Mi
