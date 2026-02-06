@@ -21,6 +21,37 @@ spec:
       containers:
       - image: ghcr.io/igait-niu/igait/igait-stage1-media-conversion:sha-9d4fe67
         name: igait-stage1-media-conversion
+        env:
+        - name: AWS_S3_BUCKET
+          valueFrom:
+            secretKeyRef:
+              name: igait-secrets
+              key: AWS_S3_BUCKET
+        - name: AWS_REGION
+          valueFrom:
+            secretKeyRef:
+              name: igait-secrets
+              key: AWS_REGION
+        - name: AWS_ACCESS_KEY_ID
+          valueFrom:
+            secretKeyRef:
+              name: igait-secrets
+              key: AWS_ACCESS_KEY_ID
+        - name: AWS_SECRET_ACCESS_KEY
+          valueFrom:
+            secretKeyRef:
+              name: igait-secrets
+              key: AWS_SECRET_ACCESS_KEY
+        - name: FIREBASE_RTDB_URL
+          valueFrom:
+            secretKeyRef:
+              name: igait-secrets
+              key: FIREBASE_RTDB_URL
+        - name: FIREBASE_ACCESS_KEY
+          valueFrom:
+            secretKeyRef:
+              name: igait-secrets
+              key: FIREBASE_ACCESS_KEY
         resources:
           limits:
             cpu: 500m
