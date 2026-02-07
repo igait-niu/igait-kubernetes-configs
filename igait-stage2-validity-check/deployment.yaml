@@ -19,7 +19,7 @@ spec:
         app: igait-stage2-validity-check
     spec:
       containers:
-      - image: ghcr.io/igait-niu/igait/igait-stage2-validity-check:sha-9d4fe67
+      - image: ghcr.io/igait-niu/igait/igait-stage2-validity-check:sha-430360a
         name: igait-stage2-validity-check
         env:
         - name: AWS_S3_BUCKET

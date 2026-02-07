@@ -19,7 +19,7 @@ spec:
         app: igait-stage1-media-conversion
     spec:
       containers:
-      - image: ghcr.io/igait-niu/igait/igait-stage1-media-conversion:sha-9d4fe67
+      - image: ghcr.io/igait-niu/igait/igait-stage1-media-conversion:sha-f4437cd
         name: igait-stage1-media-conversion
         env:
         - name: AWS_S3_BUCKET
