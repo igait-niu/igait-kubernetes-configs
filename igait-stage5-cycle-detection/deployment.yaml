@@ -54,10 +54,10 @@ spec:
               key: FIREBASE_ACCESS_KEY
         resources:
           limits:
-            cpu: "2"
+            cpu: "4"
             memory: 4Gi
             ephemeral-storage: 128Mi
           requests:
-            cpu: 50m
+            cpu: "2"
             memory: 1Gi
             ephemeral-storage: 32Mi
