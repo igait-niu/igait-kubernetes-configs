@@ -19,7 +19,7 @@ spec:
         app: igait-stage5-cycle-detection
     spec:
       containers:
-      - image: ghcr.io/igait-niu/igait/igait-stage5-cycle-detection:sha-53cda2a
+      - image: ghcr.io/igait-niu/igait/igait-stage5-cycle-detection:sha-4649915
         name: igait-stage5-cycle-detection
         env:
         - name: AWS_S3_BUCKET
