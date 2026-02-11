@@ -19,7 +19,7 @@ spec:
         app: igait-stage7-finalize
     spec:
       containers:
-      - image: ghcr.io/igait-niu/igait/igait-stage7-finalize:sha-53cda2a
+      - image: ghcr.io/igait-niu/igait/igait-stage7-finalize:sha-1bb5a50
         name: igait-stage7-finalize
         env:
         - name: AWS_S3_BUCKET
