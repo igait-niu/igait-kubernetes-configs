@@ -19,7 +19,7 @@ spec:
         app: igait-stage6-prediction
     spec:
       containers:
-      - image: ghcr.io/igait-niu/igait/igait-stage6-prediction:sha-d8d03fc
+      - image: ghcr.io/igait-niu/igait/igait-stage6-prediction:sha-f4e145a
         name: igait-stage6-prediction
         env:
         - name: AWS_S3_BUCKET
