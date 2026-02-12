@@ -22,7 +22,7 @@ spec:
         app: igait-backend
     spec:
       containers:
-      - image: ghcr.io/igait-niu/igait/igait-backend:sha-0b5cddd
+      - image: ghcr.io/igait-niu/igait/igait-backend:sha-cce9eb9
         name: igait-backend
         ports:
         - containerPort: 3000

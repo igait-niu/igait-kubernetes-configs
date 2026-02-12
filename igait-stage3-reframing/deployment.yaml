@@ -19,7 +19,7 @@ spec:
         app: igait-stage3-reframing
     spec:
       containers:
-      - image: ghcr.io/igait-niu/igait/igait-stage3-reframing:sha-0b5cddd
+      - image: ghcr.io/igait-niu/igait/igait-stage3-reframing:sha-cce9eb9
         name: igait-stage3-reframing
         env:
         - name: AWS_S3_BUCKET

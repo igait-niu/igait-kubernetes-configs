@@ -19,7 +19,7 @@ spec:
         app: igait-stage4-pose-estimation
     spec:
       containers:
-      - image: ghcr.io/igait-niu/igait/igait-stage4-pose-estimation:sha-0b5cddd
+      - image: ghcr.io/igait-niu/igait/igait-stage4-pose-estimation:sha-cce9eb9
         name: igait-stage4-pose-estimation
         env:
         - name: AWS_S3_BUCKET
