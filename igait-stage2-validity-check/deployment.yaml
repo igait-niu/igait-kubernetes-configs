@@ -7,7 +7,7 @@ metadata:
     app: igait-stage2-validity-check
 spec:
   revisionHistoryLimit: 1
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: igait-stage2-validity-check
@@ -54,10 +54,10 @@ spec:
               key: FIREBASE_ACCESS_KEY
         resources:
           limits:
-            cpu: "2"
-            memory: 4Gi
+            cpu: "8"
+            memory: 8Gi
             ephemeral-storage: 2Gi
           requests:
-            cpu: 500m
-            memory: 1Gi
+            cpu: 15m
+            memory: 256Mi
             ephemeral-storage: 512Mi
